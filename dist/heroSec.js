@@ -6,10 +6,10 @@ export function HeroSection() {
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
         <h2 class="text-4xl font-bold text-gray-800 mb-4">
-          Discover the Future of Sound & Power
+         The most popular items in 2025
         </h2>
         <p class="text-lg text-gray-600 mb-6">
-          Shop premium headphones and the latest smartphones at unbeatable prices. Upgrade your tech life today!
+          Shop premium products and the latest limitedition at unbeatable prices. Upgrade your tech life today!
         </p>
         <a href="#products" class="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition">
           Browse Products

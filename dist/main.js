@@ -1,6 +1,6 @@
 // src/main.ts
 import { HeroSection } from './heroSec.js'; // <--- **ADD .js EXTENSION HERE** for browser compatibility
-import { product } from './Product.js';
+import { products } from './Product.js';
 const app = document.getElementById('app');
 if (app) {
     app.appendChild(HeroSection());
@@ -8,10 +8,7 @@ if (app) {
 console.log('Main loaded');
 // productCard
 function renderProductCard(product) {
-    const container = document.getElementById("product-container");
-    if (!container)
-        return;
-    container.innerHTML = `
+    return `
     <div class="bg-white rounded-2xl shadow-lg max-w-sm w-full overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       <img class="w-full h-64 object-cover" src="${product.imageUrl}" alt="${product.model}" />
       <div class="p-6">
@@ -25,4 +22,10 @@ function renderProductCard(product) {
     </div>
   `;
 }
-renderProductCard(product);
+function renderProductList(products) {
+    const container = document.getElementById("product-container");
+    if (!container)
+        return;
+    container.innerHTML = products.map(renderProductCard).join("");
+}
+renderProductList(products);

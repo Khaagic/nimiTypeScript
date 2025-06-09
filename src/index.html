@@ -14,7 +14,7 @@
       >
         <!-- Logo / Brand -->
         <h1 class="text-2xl font-bold text-indigo-600 tracking-wide">
-          TechHaven
+          ShoeShop
         </h1>
 
         <!-- Navigation Menu -->
@@ -23,7 +23,7 @@
         >
           <a href="#" class="hover:text-indigo-600">Home</a>
           <a href="#products" class="hover:text-indigo-600">Shoes</a>
-          <a href="#products" class="hover:text-indigo-600">Shoes Detail</a>
+          <a href="#" class="hover:text-indigo-600">Shoes Detail</a>
           <a href="#about" class="hover:text-indigo-600">About</a>
           <a href="#contact" class="hover:text-indigo-600">Contact</a>
         </nav>
@@ -67,9 +67,93 @@
       <div id="app"></div>
       <section class="bg-gray-100 p-6">
         <!-- cardProduct -->
-         <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        <div
+          id="product-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"
+        ></div>
       </section>
     </main>
+    <!-- Footer Section -->
+    <footer
+      class="bg-gradient-to-r from-pink-200 to-purple-200 text-gray-800 py-5 px-4 sm:px-6 lg:px-8 rounded-t-2xl shadow-md"
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+      >
+        <!-- Shop Info / Logo Section -->
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
+          <div class="flex items-center space-x-1 mb-2">
+            <i class="fas fa-shoe-prints text-3xl text-blue-600"></i>
+            <span class="font-bold text-2xl text-blue-700">ShoeShop</span>
+          </div>
+          <p class="text-sm leading-relaxed max-w-xs">
+            Step out in style with ShoeShop!
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="text-center md:text-left">
+          <h3 class="font-semibold text-base mb-2 text-blue-700">Explore</h3>
+          <ul class="space-y-1 text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="text-center md:text-left">
+          <h3 class="font-semibold text-base mb-2 text-blue-700">Connect</h3>
+          <div class="flex justify-center md:justify-start space-x-3 mt-1">
+            <a
+              href="#"
+              class="text-gray-700 hover:text-blue-600 text-xl transition-transform transform hover:scale-110"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-700 hover:text-blue-600 text-xl transition-transform transform hover:scale-110"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-700 hover:text-blue-600 text-xl transition-transform transform hover:scale-110"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div
+        class="mt-5 pt-3 border-t border-blue-300 text-center text-sm text-gray-600"
+      >
+        &copy; 2025 ShoeShop, miniprojectabouttypescript. All rights reserved.
+      </div>
+    </footer>
     <script type="module" src="/dist/main.js" defer></script>
   </body>
 </html>
