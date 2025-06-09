@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo / Brand -->
+        <h1 class="text-2xl font-bold text-indigo-600 tracking-wide">
+          TechHaven
+        </h1>
+
+        <!-- Navigation Menu -->
+        <nav
+          class="hidden md:flex space-x-6 text-gray-700 text-base font-medium"
+        >
+          <a href="#" class="hover:text-indigo-600">Home</a>
+          <a href="#products" class="hover:text-indigo-600">Shoes</a>
+          <a href="#products" class="hover:text-indigo-600">Shoes Detail</a>
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+
+        <!-- Cart / Account Icons (Optional) -->
+        <div class="flex items-center space-x-4">
+          <button class="relative">
+            <svg
+              class="w-6 h-6 text-gray-700 hover:text-indigo-600"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6M17 13l1.2 6M6 19a2 2 0 100 4 2 2 0 000-4zm12 0a2 2 0 100 4 2 2 0 000-4z"
+              />
+            </svg>
+          </button>
+          <button>
+            <svg
+              class="w-6 h-6 text-gray-700 hover:text-indigo-600"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A9 9 0 1112 21a9 9 0 01-6.879-3.196zM15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="app"></div>
+      <section>
+        <!-- cardProduct -->
+         <div id="product-container"></div>
+      </section>
+    </main>
+    <script type="module" src="/dist/main.js" defer></script>
+  </body>
+</html>
